@@ -1,6 +1,10 @@
 body {
   margin: 0;
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 button {
   cursor: pointer;
 }
@@ -12,6 +16,11 @@ button {
 .imgbg {
   background-size: cover;
   background-position: center;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 input::-webkit-input-placeholder {
   color: #C5C7CB;
@@ -26,4 +35,145 @@ input[type=text]:focus,
 input[type=password]:focus,
 textarea:focus {
   -webkit-box-shadow: 0 0 0 1000px #fff  inset;
+}
+.el-header,
+.el-footer,
+.el-main {
+  padding: 0;
+}
+.el-header {
+  padding: 0 15px;
+  box-shadow: 0 1px 9px 0 rgba(203, 208, 228, 0.2);
+}
+.el-header .logo-img {
+  width: 140px;
+  height: 20px;
+  margin: 20px 0 16px 0;
+}
+.el-header .icon-meun {
+  font-size: 20px;
+  color: #666;
+  cursor: pointer;
+  display: none;
+}
+.el-header .search-box {
+  height: 41px;
+  margin: 9px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(216, 216, 216, 0.4);
+}
+.el-header .search-box input {
+  width: 86%;
+  border: none;
+  height: 36px;
+}
+.el-header .search-box input:focus {
+  outline: none;
+}
+.el-header .search-box button {
+  width: 36px;
+  height: 24px;
+  background-size: cover;
+  border: none;
+  border-radius: 4px;
+  background-image: url("/static/img/icon_search.png");
+}
+.el-header .search-box button:hover {
+  background-image: url("/static/img/icon_search_hover.png");
+}
+.el-header .menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  line-height: 60px;
+}
+.el-header .menu ul {
+  box-shadow: 0 0 36px rgba(203, 208, 228, 0.8);
+  background: #fff;
+}
+.el-header .menu ul li {
+  line-height: 40px;
+  cursor: pointer;
+  padding-left: 15px;
+}
+.el-header .menu span,
+.el-header .menu .wallet a {
+  color: #A0A6C8;
+  cursor: pointer;
+  font-size: 14px;
+}
+.el-header .menu .iconfont {
+  font-size: 6px;
+  color: #A0A6C8;
+}
+.el-header .menu .item {
+  padding: 0 12px;
+}
+.el-header .menu a {
+  text-decoration: none;
+  color: #4C5155;
+  font-size: 14px;
+  display: block;
+  line-height: 40px;
+}
+.el-header .menu .tools {
+  position: relative;
+}
+.el-header .menu .tools .tools-list {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 20;
+  min-width: 160px;
+  padding-top: 10px;
+}
+.el-header .menu .tools ul li:hover {
+  background: #CACEE5;
+}
+.el-header .menu .tools ul li:hover a {
+  color: #fff;
+}
+.el-header .menu .tools:hover .tools-list {
+  display: block;
+}
+.el-header .menu .tools:hover .iconfont {
+  transform: rotate(180deg);
+}
+.el-header .menu .language {
+  position: relative;
+}
+.el-header .menu .language img {
+  vertical-align: middle;
+}
+.el-header .menu .language span {
+  vertical-align: middle;
+}
+.el-header .menu .language .language-list {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  min-width: 130px;
+  padding-top: 10px;
+}
+.el-header .menu .language ul li img {
+  width: 24px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.el-header .menu .language ul li span {
+  vertical-align: middle;
+}
+.el-header .menu .language ul li:hover {
+  background: #CACEE5;
+}
+.el-header .menu .language ul li:hover span {
+  color: #fff;
+}
+.el-header .menu .language:hover .language-list {
+  display: block;
 }

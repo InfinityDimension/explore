@@ -1,0 +1,8 @@
+@media all and (max-width: 768px) {
+  .el-header .icon-meun {
+    display: block;
+  }
+  .el-header .menu {
+    justify-content: space-between;
+  }
+}
