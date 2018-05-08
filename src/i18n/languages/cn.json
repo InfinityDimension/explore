@@ -1,0 +1,212 @@
+{
+  "login": {
+    "language": {
+      "en": "英语",
+      "cn": "汉语"
+    },
+    "placeholder": "输入你的主密码",
+    "error": "无效密码",
+    "keep": "保持登录",
+    "new": "注册",
+    "sub": "登录"
+  },
+  "register": {
+    "step1": {
+      "tab": "步骤1: 生成密码",
+      "btn1": "复制密码",
+      "btn2": "下一步"
+    },
+    "step2": {
+      "tab": "步骤2: 提交密码",
+      "btn1": "返回",
+      "btn2": "提交"
+    },
+    "info": "请确保您的密码安全，请重新键入密码以确认。",
+    "copy": {
+      "success": "复制成功",
+      "fail": "复制失败"
+    }
+  },
+  "aside":{
+    "menu": "菜单",
+    "home": "主页",
+    "account": "我的钱包",
+    "forging": "区块链设置",
+    "listing": "区块链列表",
+    "vote": "投票",
+    "transfer": "转让",
+    "peers": "其他人"
+  },
+  "head": {
+    "placeholder": "查找 地址/委托/块/传输",
+    "signOut": "退出"
+  },
+  "home": {
+    "survey": {
+      "balance": "资产",
+      "lastHeight": "最新块高度",
+      "version": "版本"
+    },
+    "transactions": "我的交易",
+    "tab": {
+      "all": "所有",
+      "sent": "发送",
+      "received": "接收"
+    },
+    "more": "更多"
+  },
+  "homeTable": {
+    "th1": "ID",
+    "th2": "时间",
+    "th3": "发件人",
+    "th4": "接件人",
+    "th5": "数量(HTC)",
+    "th6": "费用(HTC)",
+    "th7": "确认"
+  },
+  "pagination": {
+    "prev": "上一页",
+    "next": "下一页"
+  },
+  "account": {
+    "title": "钱包信息",
+    "tab": {
+      "info": "整体信息",
+      "secret": "第二密码"
+    },
+    "info": {
+      "name1": "总资产:",
+      "name2": "地址:",
+      "name3": "第二密码:",
+      "prompt": "未设置",
+      "name4": "公钥:"
+    },
+    "secret": {
+      "title": "设置第二密码",
+      "name1": "密码",
+      "placeholder1": "第二个秘密必须是从8到16个字母数字字符",
+      "name2": "确认",
+      "placeholder2": "再次输入",
+      "prompt": "确保你把第二个秘密保存在一个安全的地方。如果你失去了它，你将无法在系统中收回你的资产。当您重置第二个密码时，您将在HTC中收费",
+      "submit": "提交"
+    }
+  },
+  "delegate": {
+    "title1": "代表",
+    "title2": "伪造",
+    "title3": "我的区块",
+    "noDelegate": {
+      "prompt": "想要做一个代表，点击 \"注册代表\" 按钮.",
+      "registerBtn": "注册代表"
+    },
+    "register": {
+      "title": "注册为代表",
+      "prompt": "成为代表需要注册。您可以选择您自己的委托名称，该名称可以用来促进您的委托。只有前101名代表才有资格伪造。所有费用在前101名代表之间均摊。",
+      "name": "名称",
+      "placeholder": "请选择一个代表名称",
+      "spend": "注册需要 0.1 HTC",
+      "cancel": "取消",
+      "register": "注册",
+      "error": "名称为空！"
+    },
+    "info": {
+      "name": "名称",
+      "address": "地址"
+    },
+    "forging": {
+      "name1": "总资产 (HTC)",
+      "name2": "银行",
+      "name3": "生产率",
+      "name4": "批准"
+    }
+  },
+  "blockTable": {
+    "th1": "块ID",
+    "th2": "高度",
+    "th3": "时间",
+    "th4": "交易",
+    "th5": "由来",
+    "th6": "数量(HTC)",
+    "th7": "伪造(HTC)"
+  },
+  "listing": {
+    "title": "最新区块"
+  },
+  "vote": {
+    "title": "投票",
+    "view": {
+      "prompt": "查看选择",
+      "btn": "投票",
+      "seeTitle": "已选列表",
+      "confirmTitle": "为代表投票",
+      "th1": "名称",
+      "th2": "地址",
+      "confirmPrompt": "请确认您的投票，你可以在一次投票中选择最多33人",
+      "spend": "投票需要 0.1 HTC",
+      "cancel": "取消",
+      "confirm": "确认投票"
+    },
+    "search": {
+      "placeholder": "搜索代表",
+      "result": "搜索结果",
+      "name": "姓名",
+      "address": "地址"
+    },
+    "voteData": {
+      "all": "共",
+      "delegates": {
+        "tab": "代表列表",
+        "unit": "代表",
+        "th1": "等级",
+        "th2": "名称",
+        "th3": "地址",
+        "th4": "生产率",
+        "th5": "伪造区块",
+        "th6": "批准"
+      },
+      "record": {
+        "tab": "投票记录",
+        "unit": "记录",
+        "th1": "等级",
+        "th2": "名称",
+        "th3": "地址",
+        "th4": "生产率",
+        "th5": "伪造区块",
+        "th6": "批准"
+      },
+      "voters": {
+        "tab": "我的投票",
+        "unit": "投票",
+        "th1": "名称",
+        "th2": "地址",
+        "th3": "百分比"
+      }
+    }
+  },
+  "transfer": {
+    "title": "新转移",
+    "form": {
+      "recipient": "接收者",
+      "recipientErr": "空接收者",
+      "recipientPlaceholder": "输入接收者的地址",
+      "amount": "数量",
+      "amountErr": "空数量",
+      "amountPlaceholder": "输入数量",
+      "fee": "价格"
+    },
+    "prompt": "请确保把XAS发送到正确的地址，无法取消此操作。",
+    "send": "发送"
+  },
+  "peerTable": {
+    "th1": "IP地址",
+    "th2": "端口",
+    "th3": "主机名",
+    "th4": "状态",
+    "th5": "版本",
+    "th6": "系统",
+    "th7": "高度"
+  },
+  "peers": {
+    "title": "其他列表"
+  }
+}
