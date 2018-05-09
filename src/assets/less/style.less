@@ -5,6 +5,9 @@ body{
   max-width: 1200px;
   margin: 0 auto;
 }
+a{
+  text-decoration: none;
+}
 button{
   cursor: pointer;
 }
@@ -176,6 +179,110 @@ input[type=text]:focus,input[type=password]:focus, textarea:focus {
     .language:hover{
       .language-list{
         display: block;
+      }
+    }
+  }
+}
+.el-footer{
+  background: #f1f5f8;
+  color: #C5C7CB;
+  padding: 0 15px;
+  .nav{
+    margin: 10px 0;
+    white-space: nowrap;
+  }
+  a{
+    color: #BBC1D3;
+    font-size: 36px;
+    margin-right: 50px;
+  }
+  a:last-child{
+    margin-right: 0;
+  }
+  .wx{
+    color: #A0A6C8;
+  }
+  ul{
+    li{
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 20px;
+    }
+    li:last-child{
+      margin-bottom: 0;
+    }
+  }
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    .copyright{
+      font-size: 14px;
+    }
+  }
+  .footer:first-child{
+    border-bottom: 1px solid #E0E0E0;
+    padding: 40px 0;
+  }
+}
+.home{
+  overflow-y: hidden;
+  .banner{
+    text-align: center;
+    .logo{
+      margin: 134px 0 36px;
+      width: 368px;
+      max-width: 100%;
+    }
+    p{
+      margin: 0;
+      color: #A0A6C8;
+      line-height: 21px;
+      font-size: 18px;
+    }
+    div{
+      height: 300px;
+      background-image: url("/static/img/banner.png");
+    }
+  }
+  .data{
+    background: #fff;
+    margin: -50px auto 70px auto;
+    box-shadow: 0 1px 9px 0 rgba(203,208,228,0.2);
+    border-radius: 4px;
+    padding: 50px 55px;
+    box-sizing: border-box;
+    ul{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      li{
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+          margin-right: 30px;
+        }
+        h5{
+          color: #C5C7CB;
+          margin: 0 0 25px 0;
+          font-weight: 500;
+          line-height: 18px;
+          font-size: 16px;
+        }
+        p{
+          color: #4C5155;
+          margin: 0;
+          line-height: 30px;
+          font-size: 26px;
+        }
+      }
+      li:after{
+        content: '';
+        display: block;
+        clear: both;
       }
     }
   }

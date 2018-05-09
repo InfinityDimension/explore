@@ -5,6 +5,9 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+a {
+  text-decoration: none;
+}
 button {
   cursor: pointer;
 }
@@ -176,4 +179,106 @@ textarea:focus {
 }
 .el-header .menu .language:hover .language-list {
   display: block;
+}
+.el-footer {
+  background: #f1f5f8;
+  color: #C5C7CB;
+  padding: 0 15px;
+}
+.el-footer .nav {
+  margin: 10px 0;
+  white-space: nowrap;
+}
+.el-footer a {
+  color: #BBC1D3;
+  font-size: 36px;
+  margin-right: 50px;
+}
+.el-footer a:last-child {
+  margin-right: 0;
+}
+.el-footer .wx {
+  color: #A0A6C8;
+}
+.el-footer ul li {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.el-footer ul li:last-child {
+  margin-bottom: 0;
+}
+.el-footer .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+.el-footer .footer .copyright {
+  font-size: 14px;
+}
+.el-footer .footer:first-child {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 40px 0;
+}
+.home {
+  overflow-y: hidden;
+}
+.home .banner {
+  text-align: center;
+}
+.home .banner .logo {
+  margin: 134px 0 36px;
+  width: 368px;
+  max-width: 100%;
+}
+.home .banner p {
+  margin: 0;
+  color: #A0A6C8;
+  line-height: 21px;
+  font-size: 18px;
+}
+.home .banner div {
+  height: 300px;
+  background-image: url("/static/img/banner.png");
+}
+.home .data {
+  background: #fff;
+  margin: -50px auto 70px auto;
+  box-shadow: 0 1px 9px 0 rgba(203, 208, 228, 0.2);
+  border-radius: 4px;
+  padding: 50px 55px;
+  box-sizing: border-box;
+}
+.home .data ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home .data ul li {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .data ul li img {
+  margin-right: 30px;
+}
+.home .data ul li h5 {
+  color: #C5C7CB;
+  margin: 0 0 25px 0;
+  font-weight: 500;
+  line-height: 18px;
+  font-size: 16px;
+}
+.home .data ul li p {
+  color: #4C5155;
+  margin: 0;
+  line-height: 30px;
+  font-size: 26px;
+}
+.home .data ul li:after {
+  content: '';
+  display: block;
+  clear: both;
 }

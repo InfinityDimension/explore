@@ -5,4 +5,21 @@
   .el-header .menu {
     justify-content: space-between;
   }
+  .el-footer .footer {
+    display: block;
+  }
+  .el-footer .footer a {
+    margin-right: 20px;
+  }
+  .home .data {
+    padding: 40px 20px;
+  }
+  .home .data ul {
+    display: block;
+  }
+}
+@media all and (max-width: 850px) {
+  .home .data ul li img {
+    margin-right: 10px;
+  }
 }
