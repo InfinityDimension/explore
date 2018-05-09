@@ -20,6 +20,41 @@ button {
   background-size: cover;
   background-position: center;
 }
+.el-table::before {
+  display: none;
+}
+.title {
+  margin: 70px 0 20px 0;
+  height: 64px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title h2 {
+  font-size: 30px;
+  color: #4C5155;
+  line-height: 35px;
+  font-weight: 600;
+}
+.title a {
+  display: block;
+  width: 80px;
+  line-height: 32px;
+  text-align: center;
+  background: #F5F6FA;
+  border-radius: 4px;
+  color: #1B76FF;
+  font-size: 14px;
+}
+.title a:hover {
+  color: #fff;
+  background: #1B76FF;
+}
+.table-box {
+  width: 100%;
+  overflow: auto;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -184,6 +219,7 @@ textarea:focus {
   background: #f1f5f8;
   color: #C5C7CB;
   padding: 0 15px;
+  margin-top: 168px;
 }
 .el-footer .nav {
   margin: 10px 0;
@@ -244,7 +280,7 @@ textarea:focus {
 }
 .home .data {
   background: #fff;
-  margin: -50px auto 70px auto;
+  margin: -50px auto 0 auto;
   box-shadow: 0 1px 9px 0 rgba(203, 208, 228, 0.2);
   border-radius: 4px;
   padding: 50px 55px;

@@ -74,7 +74,10 @@
     .el-table td:nth-child(1)>.cell{
        color: #3291FF;
      }
-    .el-table td:nth-child(5)>.cell{
+    .el-table td:nth-child(3)>.cell{
+      color: #3291FF;
+    }
+    .el-table td:nth-child(4)>.cell{
       color: #3291FF;
     }
   }

@@ -83,7 +83,7 @@
 </template>
 
 <script>
-  import {handleLocalStorage} from '../../utils/util'
+import {handleLocalStorage} from '../../utils/util'
 export default {
   name: 'index',
   data () {

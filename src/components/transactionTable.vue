@@ -6,35 +6,34 @@
       style="width: 100%"
       fit>
       <el-table-column
-        prop="ip"
-        :label="$t('peerTable.th1')"
+        prop="id"
+        :label="$t('transactionTable.th1')"
         min-width="100">
       </el-table-column>
       <el-table-column
-        prop="port"
-        :label="$t('peerTable.th2')">
-      </el-table-column>
-      <el-table-column
-        prop="hostName"
-        :label="$t('peerTable.th3')"
-        min-width="180">
-      </el-table-column>
-      <el-table-column
-        prop="status"
-        :label="$t('peerTable.th4')">
-        <template slot-scope="scope"><span :class="'status'+scope.row.status"></span></template>
-      </el-table-column>
-      <el-table-column
-        prop="version"
-        :label="$t('peerTable.th5')">
-      </el-table-column>
-      <el-table-column
-        prop="platform"
-        :label="$t('peerTable.th6')">
-      </el-table-column>
-      <el-table-column
         prop="height"
-        :label="$t('peerTable.th7')">
+        :label="$t('transactionTable.th2')">
+      </el-table-column>
+      <el-table-column
+        prop="time"
+        :label="$t('transactionTable.th3')"
+        min-width="110">
+      </el-table-column>
+      <el-table-column
+        prop="transcation"
+        :label="$t('transactionTable.th4')">
+      </el-table-column>
+      <el-table-column
+        prop="generatedBy"
+        :label="$t('transactionTable.th5')">
+      </el-table-column>
+      <el-table-column
+        prop="amount"
+        :label="$t('transactionTable.th6')">
+      </el-table-column>
+      <el-table-column
+        prop="forged"
+        :label="$t('transactionTable.th7')">
       </el-table-column>
     </el-table>
   </div>
@@ -42,7 +41,7 @@
 
 <script>
   export default {
-    name: "peer-table",
+    name: "block-table",
     data(){
         return {
 
@@ -72,19 +71,11 @@
       text-overflow:ellipsis;
       white-space: nowrap;
     }
-    .el-table td>.cell .status1{
-      display: inline-block;
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      background: #28CF4A;
-    }
-    .el-table td>.cell .status0{
-      display: inline-block;
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      background: #f00;
+    .el-table td:nth-child(1)>.cell{
+       color: #3291FF;
+     }
+    .el-table td:nth-child(5)>.cell{
+      color: #3291FF;
     }
   }
 </style>
