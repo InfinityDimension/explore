@@ -5,8 +5,10 @@
         <h2>{{ $t("allTransaction.title") }}</h2>
       </div>
       <div class="table-box">
-        <transactionTable :tableData="transactionData"></transactionTable>
-        <pagination @pageChange="getPageData"></pagination>
+        <div class="table-scroll">
+          <transactionTable :tableData="transactionData"></transactionTable>
+          <pagination @pageChange="getPageData"></pagination>
+        </div>
       </div>
     </div>
   </div>
@@ -47,7 +49,9 @@
       }
     },
     methods: {
-
+      getPageData(val){
+        console.log('接收到的分页：'+val)
+      }
     },
     components:{
       transactionTable,

@@ -5,8 +5,10 @@
         <h2>{{ $t("allBlock.title") }}</h2>
       </div>
       <div class="table-box">
-        <blockTable :tableData="blockData"></blockTable>
-        <pagination @pageChange="getPageData"></pagination>
+        <div class="table-scroll">
+          <blockTable :tableData="blockData"></blockTable>
+          <pagination @pageChange="getPageData"></pagination>
+        </div>
       </div>
     </div>
   </div>

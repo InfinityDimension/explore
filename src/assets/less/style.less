@@ -11,6 +11,9 @@ a{
 button{
   cursor: pointer;
 }
+img{
+  max-width: 100%;
+}
 .flex{
   display: flex;
   justify-content: space-between;
@@ -78,6 +81,13 @@ button{
 .table-box{
   width: 100%;
   overflow: auto;
+  overflow: -moz-scrollbars-none;
+  .table-scroll{
+    min-width: 800px;
+  }
+}
+.table-box::-webkit-scrollbar{
+  display: none;
 }
 ul{
   margin: 0;
@@ -102,8 +112,7 @@ input[type=text]:focus,input[type=password]:focus, textarea:focus {
   box-shadow: 0 1px 9px 0 rgba(203,208,228,0.2);
   .logo-img{
     width: 140px;
-    height: 20px;
-    margin: 20px 0 16px 0;
+    margin: 20px 0 14px 0;
   }
   .icon-meun{
     font-size: 20px;
@@ -246,7 +255,6 @@ input[type=text]:focus,input[type=password]:focus, textarea:focus {
   background: #f1f5f8;
   color: #C5C7CB;
   padding: 0 15px;
-  margin-top: 168px;
   .nav{
     margin: 10px 0;
     white-space: nowrap;
@@ -292,7 +300,7 @@ input[type=text]:focus,input[type=password]:focus, textarea:focus {
     text-align: center;
     .logo{
       margin: 134px 0 36px;
-      width: 368px;
+      width: 374px;
       max-width: 100%;
     }
     p{
@@ -346,4 +354,20 @@ input[type=text]:focus,input[type=password]:focus, textarea:focus {
       }
     }
   }
+}
+.no-result{
+  text-align: center;
+  padding: 100px 0 150px 0;
+  img{
+    width: 208px;
+  }
+  p{
+    color: #4C5155;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 40px 0 0;
+  }
+}
+.accounts{
+
 }

@@ -46,13 +46,17 @@
     "th6": "Fee(HTC)"
   },
   "pagination":{
-    "prev": "Previous",
-    "next": "Next"
-  },
+  "prev": "Previous",
+  "next": "Next"
+},
   "allTransaction": {
     "title": "All Transactions"
   },
   "allBlock": {
     "title": "All Blocks"
+  },
+  "noResult": "No Search Results",
+  "delegate": {
+    "title": "Delegate Monitor"
   }
 }

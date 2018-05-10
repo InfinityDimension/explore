@@ -44,5 +44,16 @@
     "th4": "接收",
     "th5": "数量(HTC)",
     "th6": "费用(HTC)"
-  }
+  },
+  "pagination":{
+    "prev": "上一页",
+    "next": "下一页"
+  },
+  "allTransaction": {
+    "title": "所有交易"
+  },
+  "allBlock": {
+    "title": "所有区块"
+  },
+  "noResult": "搜索结果为空"
 }

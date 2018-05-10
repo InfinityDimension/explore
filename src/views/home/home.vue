@@ -36,14 +36,18 @@
         <router-link to="allTransaction">{{ $t("home.viewAll") }}</router-link>
       </div>
       <div class="table-box">
-        <transactionTable :tableData="transactionData"></transactionTable>
+        <div class="table-scroll">
+          <transactionTable :tableData="transactionData"></transactionTable>
+        </div>
       </div>
       <div class="title">
         <h2>{{ $t("home.table2") }}</h2>
         <router-link to="/allBlock">{{ $t("home.viewAll") }}</router-link>
       </div>
       <div class="table-box">
-        <blockTable :tableData="blockData"></blockTable>
+        <div class="table-scroll">
+          <blockTable :tableData="blockData"></blockTable>
+        </div>
       </div>
     </div>
   </div>

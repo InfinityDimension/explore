@@ -17,6 +17,9 @@
   .home .data ul {
     display: block;
   }
+  .home .banner {
+    display: none;
+  }
 }
 @media all and (max-width: 850px) {
   .home .data ul li img {

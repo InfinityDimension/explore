@@ -11,6 +11,9 @@ a {
 button {
   cursor: pointer;
 }
+img {
+  max-width: 100%;
+}
 .flex {
   display: flex;
   justify-content: space-between;
@@ -80,6 +83,13 @@ button {
 .table-box {
   width: 100%;
   overflow: auto;
+  overflow: -moz-scrollbars-none;
+}
+.table-box .table-scroll {
+  min-width: 800px;
+}
+.table-box::-webkit-scrollbar {
+  display: none;
 }
 ul {
   margin: 0;
@@ -111,8 +121,7 @@ textarea:focus {
 }
 .el-header .logo-img {
   width: 140px;
-  height: 20px;
-  margin: 20px 0 16px 0;
+  margin: 20px 0 14px 0;
 }
 .el-header .icon-meun {
   font-size: 20px;
@@ -245,7 +254,6 @@ textarea:focus {
   background: #f1f5f8;
   color: #C5C7CB;
   padding: 0 15px;
-  margin-top: 168px;
 }
 .el-footer .nav {
   margin: 10px 0;
@@ -291,7 +299,7 @@ textarea:focus {
 }
 .home .banner .logo {
   margin: 134px 0 36px;
-  width: 368px;
+  width: 374px;
   max-width: 100%;
 }
 .home .banner p {
@@ -343,4 +351,17 @@ textarea:focus {
   content: '';
   display: block;
   clear: both;
+}
+.no-result {
+  text-align: center;
+  padding: 100px 0 150px 0;
+}
+.no-result img {
+  width: 208px;
+}
+.no-result p {
+  color: #4C5155;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 40px 0 0;
 }
