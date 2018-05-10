@@ -1,44 +1,40 @@
 <template>
-  <div class="delegate-table">
+  <div class="block-table">
     <el-table
       :data="tableData"
       stripe
       style="width: 100%"
       fit>
       <el-table-column
-        prop="rank"
-        :label="$t('delegateTable.th1')"
+        prop="ip"
+        :label="$t('peerTable.th1')"
         min-width="100">
       </el-table-column>
       <el-table-column
-        prop="name"
-        :label="$t('delegateTable.th2')">
+        prop="port"
+        :label="$t('peerTable.th2')">
       </el-table-column>
       <el-table-column
-        prop="address"
-        :label="$t('delegateTable.th3')"
+        prop="hostName"
+        :label="$t('peerTable.th3')"
         min-width="180">
       </el-table-column>
       <el-table-column
-        prop="forged"
-        :label="$t('delegateTable.th4')">
-      </el-table-column>
-      <el-table-column
-        prop="time"
-        :label="$t('delegateTable.th5')">
-      </el-table-column>
-      <el-table-column
         prop="status"
-        :label="$t('delegateTable.th6')">
+        :label="$t('peerTable.th4')">
         <template slot-scope="scope"><span :class="'status'+scope.row.status"></span></template>
       </el-table-column>
       <el-table-column
-        prop="productivity"
-        :label="$t('delegateTable.th7')">
+        prop="version"
+        :label="$t('peerTable.th5')">
       </el-table-column>
       <el-table-column
-        prop="approval"
-        :label="$t('delegateTable.th8')">
+        prop="platform"
+        :label="$t('peerTable.th6')">
+      </el-table-column>
+      <el-table-column
+        prop="height"
+        :label="$t('peerTable.th7')">
       </el-table-column>
     </el-table>
   </div>
@@ -46,7 +42,7 @@
 
 <script>
   export default {
-    name: "delegate-table",
+    name: "peer-table",
     data(){
         return {
 
@@ -57,9 +53,24 @@
 </script>
 
 <style lang="scss">
-  .delegate-table{
-    .el-table td:nth-child(2)>.cell{
-      color: #3291FF;
+  .block-table{
+    .el-table th,.el-table td{
+      height: 56px;
+      border-bottom: none;
+    }
+    .el-table th>.cell{
+      color: #C5C7CB;
+      font-weight: 500;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+    }
+    .el-table td>.cell{
+      color: #4C5155;
+      font-weight: 500;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
     }
     .el-table td>.cell .status1{
       display: inline-block;
@@ -73,7 +84,7 @@
       width: 18px;
       height: 18px;
       border-radius: 50%;
-      background: #C5C7CB;
+      background: #f00;
     }
   }
 </style>

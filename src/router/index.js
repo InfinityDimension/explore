@@ -5,7 +5,7 @@ const Index = () => import('@/views/index/index');
 const Home = () => import('@/views/home/home');
 const AllTransaction = () => import('@/views/allTransaction/allTransaction');
 const AllBlock = () => import('@/views/allBlock/allBlock');
-const Accounts = () => import('@/views/accounts/accounts');
+const Delegate = () => import('@/views/delegate/delegate');
 const NoResult = () => import('@/views/noResult/noResult');
 
 Vue.use(Router);
@@ -32,9 +32,9 @@ export default new Router({
           component: AllBlock
         },
         {
-          path: '/accounts',
-          name: 'accounts',
-          component: Accounts
+          path: '/delegate',
+          name: 'delegate',
+          component: Delegate
         },
         {
           path: '*',

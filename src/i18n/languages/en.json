@@ -28,6 +28,10 @@
     "table1": "Latest Transactions",
     "table2": "Latest Blocks"
   },
+  "pagination":{
+    "prev": "Previous",
+    "next": "Next"
+  },
   "blockTable": {
     "th1": "ID",
     "th2": "Height",
@@ -45,10 +49,23 @@
     "th5": "Amount(HTC)",
     "th6": "Fee(HTC)"
   },
-  "pagination":{
-  "prev": "Previous",
-  "next": "Next"
-},
+  "delegateTable": {
+    "th1": "Rank",
+    "th2": "Name",
+    "th3": "Address",
+    "th4": "Forged(HTC)",
+    "th5": "ForgingTime",
+    "th6": "Status",
+    "th7": "Productivity",
+    "th8": "Approval"
+  },
+  "standbyTable": {
+    "th1": "Rank",
+    "th2": "Name",
+    "th3": "Address",
+    "th4": "Productivity",
+    "th5": "Approval"
+  },
   "allTransaction": {
     "title": "All Transactions"
   },

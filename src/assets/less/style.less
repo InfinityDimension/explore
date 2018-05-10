@@ -62,6 +62,7 @@ img{
     color: #4C5155;
     line-height: 35px;
     font-weight: 600;
+    margin: 0;
   }
   a{
     display: block;
@@ -255,6 +256,7 @@ input[type=text]:focus,input[type=password]:focus, textarea:focus {
   background: #f1f5f8;
   color: #C5C7CB;
   padding: 0 15px;
+  margin-top: 150px;
   .nav{
     margin: 10px 0;
     white-space: nowrap;
@@ -357,7 +359,7 @@ input[type=text]:focus,input[type=password]:focus, textarea:focus {
 }
 .no-result{
   text-align: center;
-  padding: 100px 0 150px 0;
+  padding: 100px 0 0 0;
   img{
     width: 208px;
   }
@@ -368,6 +370,103 @@ input[type=text]:focus,input[type=password]:focus, textarea:focus {
     margin: 40px 0 0;
   }
 }
-.accounts{
-
+.delegate{
+  .monitor{
+    .item{
+      width: 370px;
+      max-width: 100%;
+      margin: 0 auto 50px auto;
+      display: flex;
+      padding-top: 32px;
+      height: 180px;
+      box-sizing: border-box;
+      .blue{
+        color: #1B76FF;
+      }
+      .grey{
+        color: #4C5155;
+      }
+      img{
+        width: 80px;
+        height: 80px;
+        margin-right: 40px;
+      }
+      h5{
+        margin: 0;
+        color: #73799C;
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 500;
+      }
+      h4{
+        margin: 12px 0 18px 0;
+        color: #4C5155;
+        font-size: 28px;
+        line-height: 32px;
+      }
+      p{
+        margin: 0 0 8px 0;
+        font-size: 16px;
+        color: #BBC1D3;
+        line-height: 24px;
+      }
+    }
+  }
+  .tab{
+    border-bottom: 1px solid #EDEDED;
+    padding-top: 50px;
+    margin-bottom: 40px;
+    li{
+      padding: 16px 0;
+      width: 48%;
+      margin: 0 15px;
+      line-height: 28px;
+      background: #F8F9FD;
+      color: #C5C7CB;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 8px 8px 0 0;
+    }
+    .active{
+      background: #1B76FF;
+      color: #fff;
+    }
+  }
+  .tab-active{
+    .el-col{
+      div{
+        width: 270px;
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 25px 40px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        h5{
+          color: #fff;
+          font-size: 28px;
+          line-height: 32px;
+          margin: 0 0 19px 0;
+        }
+        p{
+          margin: 0;
+          color: #fff;
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+    }
+    .el-col:nth-child(1) div{
+      background:linear-gradient(90deg,#63BEFF,#80B6F6);
+    }
+    .el-col:nth-child(2) div{
+      background:linear-gradient(90deg,#FFC77B,#FFAB77);
+    }
+    .el-col:nth-child(3) div{
+      background:linear-gradient(90deg,#FF7F7D,#FF6663);
+    }
+    .el-col:nth-child(4) div{
+      background:linear-gradient(90deg,#5FE9AE,#4FE8B3);
+    }
+  }
 }

@@ -26,8 +26,8 @@
                   <div class="tools-list">
                     <ul>
                       <li><router-link to="/accounts">{{ $t("header.menu.tools.nav1") }}</router-link></li>
-                      <li><router-link to="">{{ $t("header.menu.tools.nav2") }}</router-link></li>
-                      <li><router-link to="">{{ $t("header.menu.tools.nav3") }}</router-link></li>
+                      <li><router-link to="/delegate">{{ $t("header.menu.tools.nav2") }}</router-link></li>
+                      <li><router-link to="/network">{{ $t("header.menu.tools.nav3") }}</router-link></li>
                     </ul>
                   </div>
                 </div>
