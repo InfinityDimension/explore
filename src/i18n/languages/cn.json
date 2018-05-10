@@ -16,5 +16,33 @@
     "email": "邮件：webmaster@jaz-intl.com",
     "address": "地址：澳大利亚新南威尔士驱动粗花头南2486 9A/ 139分钟的NunJungBar",
     "copyright": "COPYRIGHT (©) 2018 HealthTrace 版权所有"
+  },
+  "home": {
+    "banner": "健康追踪的块链资源管理器",
+    "data": {
+      "height": "高度",
+      "supply": "供应链",
+      "users": "用户"
+    },
+    "viewAll": "查看所有",
+    "table1": "最新交易",
+    "table2": "最新区块"
+  },
+  "blockTable": {
+    "th1": "ID",
+    "th2": "高度",
+    "th3": "时间",
+    "th4": "交易",
+    "th5": "生成",
+    "th6": "数量(HTC)",
+    "th7": "伪造(HTC)"
+  },
+  "transactionTable": {
+    "th1": "ID",
+    "th2": "时间",
+    "th3": "发送",
+    "th4": "接收",
+    "th5": "数量(HTC)",
+    "th6": "费用(HTC)"
   }
 }

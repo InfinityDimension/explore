@@ -33,14 +33,14 @@
     <div class="container">
       <div class="title">
         <h2>{{ $t("home.table1") }}</h2>
-        <router-link to="">{{ $t("home.viewAll") }}</router-link>
+        <router-link to="allTransaction">{{ $t("home.viewAll") }}</router-link>
       </div>
       <div class="table-box">
         <transactionTable :tableData="transactionData"></transactionTable>
       </div>
       <div class="title">
         <h2>{{ $t("home.table2") }}</h2>
-        <router-link to="">{{ $t("home.viewAll") }}</router-link>
+        <router-link to="/allBlock">{{ $t("home.viewAll") }}</router-link>
       </div>
       <div class="table-box">
         <blockTable :tableData="blockData"></blockTable>
@@ -56,8 +56,56 @@ export default {
   name: "home",
   data(){
     return {
-      transactionData: [], //交易列表
-      blockData: [], //区块列表
+      transactionData: [{
+        id: '6421980538sdsad',
+        height: '596356',
+        time: '2018/01/13 17:44:47',
+        transcation: '0',
+        generatedBy: 'HTRoad',
+        amount: '499.12345678',
+        forged: '4.1'
+      },{
+        id: '6421980538sdsad',
+        height: '596356',
+        time: '2018/01/13 17:44:47',
+        transcation: '0',
+        generatedBy: 'HTRoad',
+        amount: '499.12345678',
+        forged: '4.1'
+      },{
+        id: '6421980538sdsad',
+        height: '596356',
+        time: '2018/01/13 17:44:47',
+        transcation: '0',
+        generatedBy: 'HTRoad',
+        amount: '499.12345678',
+        forged: '4.1'
+      }], //交易列表
+      blockData: [{
+        id: '6421980538sdsad',
+        height: '596356',
+        time: '2018/01/13 17:44:47',
+        transcation: '0',
+        generatedBy: 'HTRoad',
+        amount: '499.12345678',
+        forged: '4.1'
+      },{
+        id: '6421980538sdsad',
+        height: '596356',
+        time: '2018/01/13 17:44:47',
+        transcation: '0',
+        generatedBy: 'HTRoad',
+        amount: '499.12345678',
+        forged: '4.1'
+      },{
+        id: '6421980538sdsad',
+        height: '596356',
+        time: '2018/01/13 17:44:47',
+        transcation: '0',
+        generatedBy: 'HTRoad',
+        amount: '499.12345678',
+        forged: '4.1'
+      }], //区块列表
     }
   },
   methods: {

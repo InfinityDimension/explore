@@ -1,5 +1,5 @@
 <template>
-  <div class="block-table">
+  <div class="transaction-table">
     <el-table
       :data="tableData"
       stripe
@@ -31,10 +31,6 @@
         prop="amount"
         :label="$t('transactionTable.th6')">
       </el-table-column>
-      <el-table-column
-        prop="forged"
-        :label="$t('transactionTable.th7')">
-      </el-table-column>
     </el-table>
   </div>
 </template>
@@ -52,30 +48,9 @@
 </script>
 
 <style lang="scss">
-  .block-table{
-    .el-table th,.el-table td{
-      height: 56px;
-      border-bottom: none;
-    }
-    .el-table th>.cell{
-      color: #C5C7CB;
-      font-weight: 500;
-      overflow: hidden;
-      text-overflow:ellipsis;
-      white-space: nowrap;
-    }
-    .el-table td>.cell{
-      color: #4C5155;
-      font-weight: 500;
-      overflow: hidden;
-      text-overflow:ellipsis;
-      white-space: nowrap;
-    }
-    .el-table td:nth-child(1)>.cell{
+  .transaction-table{
+    .el-table td:nth-child(1)>.cell,.el-table td:nth-child(3)>.cell,.el-table td:nth-child(4)>.cell{
        color: #3291FF;
      }
-    .el-table td:nth-child(5)>.cell{
-      color: #3291FF;
-    }
   }
 </style>

@@ -42,7 +42,17 @@
     "th2": "Timestamp",
     "th3": "Sender",
     "th4": "Recipient",
-    "th6": "Amount(HTC)",
-    "th7": "Fee(HTC)"
+    "th5": "Amount(HTC)",
+    "th6": "Fee(HTC)"
+  },
+  "pagination":{
+    "prev": "Previous",
+    "next": "Next"
+  },
+  "allTransaction": {
+    "title": "All Transactions"
+  },
+  "allBlock": {
+    "title": "All Blocks"
   }
 }

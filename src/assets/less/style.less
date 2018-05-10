@@ -23,6 +23,30 @@ button{
 .el-table::before{
   display: none;
 }
+.el-table th,.el-table td{
+  height: 56px;
+  border-bottom: none;
+}
+.el-table th>.cell{
+  color: #C5C7CB;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.el-table td>.cell{
+  color: #4C5155;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.el-table td, .el-table th.is-leaf{
+  border-bottom: none;
+}
+.el-table--striped .el-table__body tr.el-table__row--striped td{
+  background: #F8F9FD;
+}
 .title{
   margin: 70px 0 20px 0;
   height: 64px;
