@@ -9,6 +9,9 @@
         prop="id"
         :label="$t('blockTable.th1')"
         min-width="100">
+        <template slot-scope="scope">
+          <router-link to="/block/detail">{{ scope.row.id }}</router-link>
+        </template>
       </el-table-column>
       <el-table-column
         prop="height"

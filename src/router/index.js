@@ -4,8 +4,11 @@ import {handleLocalStorage} from '../utils/util'
 const Index = () => import('@/views/index/index');
 const Home = () => import('@/views/home/home');
 const AllTransaction = () => import('@/views/allTransaction/allTransaction');
+const TransactionDetail = () => import('@/views/transactionDetail/transactionDetail');
 const AllBlock = () => import('@/views/allBlock/allBlock');
+const BlockDetail = () => import('@/views/blockDetail/blockDetail');
 const Delegate = () => import('@/views/delegate/delegate');
+const Address = () => import('@/views/address/address');
 const NoResult = () => import('@/views/noResult/noResult');
 
 Vue.use(Router);
@@ -27,14 +30,29 @@ export default new Router({
           component: AllTransaction
         },
         {
+          path: '/transaction/detail',
+          name: 'transactionDetail',
+          component: TransactionDetail
+        },
+        {
           path: '/allBlock',
           name: 'allBlock',
           component: AllBlock
         },
         {
+          path: '/block/detail',
+          name: 'blockDetail',
+          component: BlockDetail
+        },
+        {
           path: '/delegate',
           name: 'delegate',
           component: Delegate
+        },
+        {
+          path: '/address',
+          name: 'address',
+          component: Address
         },
         {
           path: '*',

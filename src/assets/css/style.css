@@ -7,6 +7,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: #3291FF;
 }
 button {
   cursor: pointer;
@@ -44,6 +45,9 @@ img {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.el-table td > .cell a {
+  color: #1B76FF;
 }
 .el-table td,
 .el-table th.is-leaf {
@@ -458,4 +462,95 @@ textarea:focus {
 }
 .delegate .tab-active .el-col:nth-child(4) div {
   background: linear-gradient(90deg, #5fe9ae, #4fe8b3);
+}
+.detail-info {
+  background: #395174;
+  border-radius: 8px;
+  padding: 10px 70px;
+  margin: 0 15px;
+}
+.detail-info li {
+  line-height: 50px;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.detail-info li p {
+  margin: 0;
+  font-size: 16px;
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.detail-info li span {
+  font-size: 16px;
+  display: block;
+  width: 10%;
+}
+.detail-info li .copy {
+  position: relative;
+  width: 74px;
+  text-align: right;
+}
+.detail-info li .copy .iconfont {
+  font-size: 24px;
+  cursor: pointer;
+}
+.detail-info li .copy img {
+  position: absolute;
+  left: 25px;
+  bottom: 46px;
+  width: 74px;
+  height: 36px;
+}
+.detail-info li:last-child {
+  border-bottom: none;
+}
+.summary {
+  background: #F5F6FA;
+  border-radius: 8px;
+  padding: 10px 70px;
+  margin: 0 15px;
+}
+.summary li {
+  color: #4C5155;
+  font-size: 16px;
+  height: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.summary li div:last-child {
+  padding-left: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.summary li .blue {
+  color: #3291FF;
+}
+.summary li .grey {
+  color: #C5C7CB;
+}
+.summary li:last-child {
+  border-bottom: none;
+}
+.address-detail .tab {
+  border-bottom: 1px solid #EDEDED;
+  padding-top: 50px;
+  margin-bottom: 40px;
+}
+.address-detail .tab li {
+  padding: 16px 0;
+  width: 30%;
+  margin: 0 15px;
+  line-height: 28px;
+  background: #F8F9FD;
+  color: #C5C7CB;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+}
+.address-detail .tab .active {
+  background: #1B76FF;
+  color: #fff;
 }

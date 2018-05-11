@@ -66,6 +66,15 @@
     "th4": "Productivity",
     "th5": "Approval"
   },
+  "transactions": {
+    "th1": "ID",
+    "th2": "Timestamp",
+    "th3": "Sender",
+    "th4": "Recipient",
+    "th5": "Amount(HTC)",
+    "th6": "Fee(HTC)",
+    "th7": "Confirmations"
+  },
   "allTransaction": {
     "title": "All Transactions"
   },
@@ -75,5 +84,19 @@
   "noResult": "No Search Results",
   "delegate": {
     "title": "Delegate Monitor"
+  },
+  "transactionDetail": {
+    "title": "Transaction",
+    "summary": "Summary"
+  },
+  "blockDetail": {
+    "title": "Block",
+    "summary": "Summary",
+    "transactions": "Transactions"
+  },
+  "address": {
+    "title": "Address",
+    "summary": "Summary",
+    "transactions": "Transactions"
   }
 }

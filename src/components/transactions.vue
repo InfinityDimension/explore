@@ -7,7 +7,7 @@
       fit>
       <el-table-column
         prop="id"
-        :label="$t('transactionTable.th1')"
+        :label="$t('transactions.th1')"
         min-width="100">
         <template slot-scope="scope">
           <router-link to="/transaction/detail">{{ scope.row.id }}</router-link>
@@ -15,24 +15,28 @@
       </el-table-column>
       <el-table-column
         prop="height"
-        :label="$t('transactionTable.th2')">
+        :label="$t('transactions.th2')">
       </el-table-column>
       <el-table-column
         prop="time"
-        :label="$t('transactionTable.th3')"
+        :label="$t('transactions.th3')"
         min-width="110">
       </el-table-column>
       <el-table-column
         prop="transcation"
-        :label="$t('transactionTable.th4')">
+        :label="$t('transactions.th4')">
       </el-table-column>
       <el-table-column
         prop="generatedBy"
-        :label="$t('transactionTable.th5')">
+        :label="$t('transactions.th5')">
       </el-table-column>
       <el-table-column
         prop="amount"
-        :label="$t('transactionTable.th6')">
+        :label="$t('transactions.th6')">
+      </el-table-column>
+      <el-table-column
+        prop="forged"
+        :label="$t('transactions.th7')">
       </el-table-column>
     </el-table>
   </div>
@@ -54,6 +58,9 @@
   .transaction-table{
     .el-table td:nth-child(1)>.cell,.el-table td:nth-child(3)>.cell,.el-table td:nth-child(4)>.cell{
        color: #3291FF;
-     }
+    }
+    .el-table td:nth-child(5)>.cell{
+      color: #28CF4A;
+    }
   }
 </style>
