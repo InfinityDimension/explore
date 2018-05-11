@@ -1,5 +1,5 @@
 <template>
-  <div class="block-table">
+  <div class="peer-table">
     <el-table
       :data="tableData"
       stripe
@@ -53,25 +53,7 @@
 </script>
 
 <style lang="scss">
-  .block-table{
-    .el-table th,.el-table td{
-      height: 56px;
-      border-bottom: none;
-    }
-    .el-table th>.cell{
-      color: #C5C7CB;
-      font-weight: 500;
-      overflow: hidden;
-      text-overflow:ellipsis;
-      white-space: nowrap;
-    }
-    .el-table td>.cell{
-      color: #4C5155;
-      font-weight: 500;
-      overflow: hidden;
-      text-overflow:ellipsis;
-      white-space: nowrap;
-    }
+  .peer-table{
     .el-table td>.cell .status1{
       display: inline-block;
       width: 18px;
@@ -84,7 +66,7 @@
       width: 18px;
       height: 18px;
       border-radius: 50%;
-      background: #f00;
+      background: #C5C7CB;
     }
   }
 </style>

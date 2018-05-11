@@ -5,7 +5,7 @@
     </div>
     <ul class="detail-info">
       <li class="flex">
-        <span>ID</span>
+        <span>{{ $t("blockDetail.info.id") }}</span>
         <p>{{ id }}</p>
         <div class="copy">
           <i class="iconfont" v-clipboard:copy="id" v-clipboard:success="onCopy">&#xe63d;</i>
@@ -14,35 +14,51 @@
       </li>
     </ul>
     <div class="title">
-      <h2>{{ $t("blockDetail.summary") }}</h2>
+      <h2>{{ $t("blockDetail.summary.title") }}</h2>
     </div>
     <ul class="summary">
       <li class="flex">
-        <div>Sender</div>
-        <div><span class="blue">12343151022746459289L</span></div>
+        <div>{{ $t("blockDetail.summary.height") }}</div>
+        <div><span class="blue">46459289L</span></div>
       </li>
       <li class="flex">
-        <div>Sender</div>
-        <div><span class="blue">12343151022746459289L</span></div>
+        <div>{{ $t("blockDetail.summary.transactions") }}</div>
+        <div>4</div>
       </li>
       <li class="flex">
-        <div>Sender</div>
+        <div>{{ $t("blockDetail.summary.confirmations") }}</div>
         <div>11</div>
       </li>
       <li class="flex">
-        <div>Sender</div>
+        <div>{{ $t("blockDetail.summary.reward") }}</div>
         <div>19.9 <span class="grey">HTC</span></div>
       </li>
       <li class="flex">
-        <div>Sender</div>
-        <div>0.1 <span class="grey">HTC</span></div>
+        <div>{{ $t("blockDetail.summary.fee") }}</div>
+        <div>0.2 <span class="grey">HTC</span></div>
       </li>
       <li class="flex">
-        <div>Sender</div>
-        <div>2018/04/07 16:37:12</div>
+        <div>{{ $t("blockDetail.summary.forged") }}</div>
+        <div>4.2 <span class="grey">HTC</span></div>
       </li>
       <li class="flex">
-        <div>Sender</div>
+        <div>{{ $t("blockDetail.summary.amount") }}</div>
+        <div>2.32432523324 <span class="grey">HTC</span></div>
+      </li>
+      <li class="flex">
+        <div>{{ $t("blockDetail.summary.timestamp") }}</div>
+        <div>2018/21/32 12:12:11</div>
+      </li>
+      <li class="flex">
+        <div>{{ $t("blockDetail.summary.generated") }}</div>
+        <div><span class="blue">Jason</span></div>
+      </li>
+      <li class="flex">
+        <div>{{ $t("blockDetail.summary.previous") }}</div>
+        <div><span class="blue">12343151022746459289L</span></div>
+      </li>
+      <li class="flex">
+        <div>{{ $t("blockDetail.summary.next") }}</div>
         <div><span class="blue">12343151022746459289L</span></div>
       </li>
     </ul>

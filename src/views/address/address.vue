@@ -5,7 +5,7 @@
     </div>
     <ul class="detail-info">
       <li class="flex">
-        <span>ID</span>
+        <span>{{ $t("address.info.address") }}</span>
         <p>{{ id }}</p>
         <div class="copy">
           <i class="iconfont" v-clipboard:copy="id" v-clipboard:success="onCopyId">&#xe63d;</i>
@@ -13,7 +13,7 @@
         </div>
       </li>
       <li class="flex">
-        <span>Key</span>
+        <span>{{ $t("address.info.key") }}</span>
         <p>{{ publicKey }}</p>
         <div class="copy">
           <i class="iconfont" v-clipboard:copy="publicKey" v-clipboard:success="onCopyKey">&#xe63d;</i>
@@ -22,45 +22,29 @@
       </li>
     </ul>
     <div class="title">
-      <h2>{{ $t("address.summary") }}</h2>
+      <h2>{{ $t("address.summary.title") }}</h2>
     </div>
     <ul class="summary">
       <li class="flex">
-        <div>Sender</div>
-        <div><span class="blue">12343151022746459289L</span></div>
+        <div>{{ $t("address.summary.balance") }}</div>
+        <div>899 <span class="grey">HTC</span></div>
       </li>
       <li class="flex">
-        <div>Sender</div>
-        <div><span class="blue">12343151022746459289L</span></div>
+        <div>{{ $t("address.summary.transactions") }}</div>
+        <div><i class="iconfont green">&#xe6ac;</i>247 <i class="iconfont red">&#xe67c;</i>71 </div>
       </li>
       <li class="flex">
-        <div>Sender</div>
-        <div>11</div>
-      </li>
-      <li class="flex">
-        <div>Sender</div>
-        <div>19.9 <span class="grey">HTC</span></div>
-      </li>
-      <li class="flex">
-        <div>Sender</div>
-        <div>0.1 <span class="grey">HTC</span></div>
-      </li>
-      <li class="flex">
-        <div>Sender</div>
-        <div>2018/04/07 16:37:12</div>
-      </li>
-      <li class="flex">
-        <div>Sender</div>
-        <div><span class="blue">12343151022746459289L</span></div>
+        <div>{{ $t("address.summary.delegate") }}</div>
+        <div><span class="blue">Catstar</span></div>
       </li>
     </ul>
     <div class="title">
       <h2>{{ $t("address.transactions") }}</h2>
     </div>
     <ul class="tab flex">
-      <li :class="{active: tab === 1}" @click="tabChange(1)">All</li>
-      <li :class="{active: tab === 2}" @click="tabChange(2)">Send</li>
-      <li :class="{active: tab === 3}" @click="tabChange(3)">Receipt</li>
+      <li :class="{active: tab === 1}" @click="tabChange(1)">{{ $t("address.tab.all") }}</li>
+      <li :class="{active: tab === 2}" @click="tabChange(2)">{{ $t("address.tab.sent") }}</li>
+      <li :class="{active: tab === 3}" @click="tabChange(3)">{{ $t("address.tab.received") }}</li>
     </ul>
     <div class="table-box" v-show="tab === 1">
       <div class="table-scroll">

@@ -530,6 +530,12 @@ textarea:focus {
 .summary li .grey {
   color: #C5C7CB;
 }
+.summary li .green {
+  color: #28cf4a;
+}
+.summary li .red {
+  color: #ff6556;
+}
 .summary li:last-child {
   border-bottom: none;
 }
@@ -553,4 +559,60 @@ textarea:focus {
 .address-detail .tab .active {
   background: #1B76FF;
   color: #fff;
+}
+.network .data .el-col {
+  border-right: 1px solid #EDEDED;
+}
+.network .data .el-col:last-child {
+  border-right: none;
+}
+.network .data .item {
+  width: 270px;
+  max-width: 100%;
+  margin: 15px auto;
+  height: 220px;
+  padding: 15px 30px 0 20px;
+  box-sizing: border-box;
+}
+.network .data .item h5 {
+  font-size: 18px;
+  color: #73799C;
+  line-height: 20px;
+  margin: 0 0 20px;
+  font-weight: 500;
+}
+.network .data .item h4 {
+  margin: 0 0 16px;
+  font-size: 28px;
+  line-height: 32px;
+  color: #4C5155;
+}
+.network .data .item h6 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+.network .data .item .blue {
+  color: #1B76FF;
+}
+.network .data .item p {
+  font-size: 14px;
+  margin: 0 0 10px;
+  color: #BBC1D3;
+}
+.network .data .item p span {
+  color: #3B4043;
+}
+.network .data .item ul li {
+  background: #F5F6FA;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  height: 40px;
+  padding: 0 10px;
+}
+.network .data .item ul li p {
+  margin-bottom: 0;
+}
+.network .data .item ul li:last-child h6 {
+  color: #28CF4A;
 }

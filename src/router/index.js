@@ -9,6 +9,7 @@ const AllBlock = () => import('@/views/allBlock/allBlock');
 const BlockDetail = () => import('@/views/blockDetail/blockDetail');
 const Delegate = () => import('@/views/delegate/delegate');
 const Address = () => import('@/views/address/address');
+const Network = () => import('@/views/network/network');
 const NoResult = () => import('@/views/noResult/noResult');
 
 Vue.use(Router);
@@ -53,6 +54,11 @@ export default new Router({
           path: '/address',
           name: 'address',
           component: Address
+        },
+        {
+          path: '/network',
+          name: 'network',
+          component: Network
         },
         {
           path: '*',

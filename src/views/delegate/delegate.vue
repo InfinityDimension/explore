@@ -9,7 +9,7 @@
           <div class="item">
             <img src="/static/img/icon_monitor1.png" alt="">
             <div>
-              <h5>Delegates</h5>
+              <h5>{{ $t("delegate.monitor.item1.title") }}</h5>
               <h4>431</h4>
               <p>Active delegates <span class="blue">101</span></p>
               <p>Standby delegates <span class="blue">67</span></p>
@@ -20,7 +20,7 @@
           <div class="item">
             <img src="/static/img/icon_monitor2.png" alt="">
             <div>
-              <h5>Delegates</h5>
+              <h5>{{ $t("delegate.monitor.item2.title") }}</h5>
               <h4>16,523,476</h4>
               <p><span class="grey">101</span> Active delegates</p>
             </div>
@@ -30,7 +30,7 @@
           <div class="item">
             <img src="/static/img/icon_monitor3.png" alt="">
             <div>
-              <h5>Delegates</h5>
+              <h5>{{ $t("delegate.monitor.item3.title") }}</h5>
               <h4><span class="blue">5578840</span></h4>
               <p>By <span class="blue">Catstar</span></p>
               <p><span class="grey">4</span> HTC from <span class="grey">0</span> transac</p>
@@ -41,7 +41,7 @@
           <div class="item">
             <img src="/static/img/icon_monitor4.png" alt="">
             <div>
-              <h5>Next Forgers</h5>
+              <h5>{{ $t("delegate.monitor.item4.title") }}</h5>
               <h4><span class="blue">Tembo</span></h4>
               <p><span class="blue">blackswan Catstar3</span></p>
               <p><span class="blue">samuray spacetrucker</span></p>
@@ -52,7 +52,7 @@
           <div class="item">
             <img src="/static/img/icon_monitor5.png" alt="">
             <div>
-              <h5>Best Forger</h5>
+              <h5>{{ $t("delegate.monitor.item5.title") }}</h5>
               <h4><span class="blue">CC001</span></h4>
               <p><span class="grey">199,387</span> HTC forged</p>
             </div>
@@ -62,7 +62,7 @@
           <div class="item">
             <img src="/static/img/icon_monitor6.png" alt="">
             <div>
-              <h5>Best Productivity</h5>
+              <h5>{{ $t("delegate.monitor.item6.title") }}</h5>
               <h4>99.3%</h4>
               <p>By <span class="blue">Catstar</span></p>
             </div>
@@ -71,33 +71,33 @@
       </el-row>
     </div>
     <ul class="tab flex">
-      <li :class="{active: tab === 1}" @click="tabChange(1)">Acitve Delegates</li>
-      <li :class="{active: tab === 2}" @click="tabChange(2)">Standby Delegates</li>
+      <li :class="{active: tab === 1}" @click="tabChange(1)">{{ $t("delegate.tab.active") }}</li>
+      <li :class="{active: tab === 2}" @click="tabChange(2)">{{ $t("delegate.tab.standby") }}</li>
     </ul>
     <div class="tab-active" v-show="tab === 1">
       <el-row>
         <el-col :xs="24" :sm="12" :md="6">
           <div>
             <h5>101</h5>
-            <p>Forged block recently</p>
+            <p>{{ $t("delegate.activeTab.item1") }}</p>
           </div>
         </el-col>
         <el-col :xs="24" :sm="12" :md="6">
           <div>
             <h5>101</h5>
-            <p>Missed block</p>
+            <p>{{ $t("delegate.activeTab.item2") }}</p>
           </div>
         </el-col>
         <el-col :xs="24" :sm="12" :md="6">
           <div>
             <h5>101</h5>
-            <p>Not forging</p>
+            <p>{{ $t("delegate.activeTab.item3") }}</p>
           </div>
         </el-col>
         <el-col :xs="24" :sm="12" :md="6">
           <div>
             <h5>101</h5>
-            <p>In queue for forging</p>
+            <p>{{ $t("delegate.activeTab.item4") }}</p>
           </div>
         </el-col>
       </el-row>

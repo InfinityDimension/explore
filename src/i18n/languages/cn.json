@@ -49,11 +49,153 @@
     "th5": "数量(HTC)",
     "th6": "费用(HTC)"
   },
+  "delegateTable": {
+    "th1": "序号",
+    "th2": "名称",
+    "th3": "地址",
+    "th4": "伪造(HTC)",
+    "th5": "伪造时间",
+    "th6": "状态",
+    "th7": "生产率",
+    "th8": "批准"
+  },
+  "standbyTable": {
+    "th1": "序号",
+    "th2": "名称",
+    "th3": "地址",
+    "th4": "生产率",
+    "th5": "批准"
+  },
+  "transactions": {
+    "th1": "ID",
+    "th2": "时间",
+    "th3": "发送",
+    "th4": "接收",
+    "th5": "数量(HTC)",
+    "th6": "费用(HTC)",
+    "th7": "确认"
+  },
+  "peerTable": {
+    "th1": "IP地址",
+    "th2": "端口",
+    "th3": "主机名",
+    "th4": "状态",
+    "th5": "版本",
+    "th6": "平台",
+    "th7": "高度"
+  },
   "allTransaction": {
     "title": "所有交易"
   },
   "allBlock": {
     "title": "所有区块"
   },
-  "noResult": "搜索结果为空"
+  "noResult": "搜索结果为空",
+  "delegate": {
+    "title": "代表管理",
+    "monitor": {
+      "item1": {
+        "title": "代表"
+      },
+      "item2": {
+        "title": "总伪造"
+      },
+      "item3": {
+        "title": "最新区块"
+      },
+      "item4": {
+        "title": "下一个伪造者"
+      },
+      "item5": {
+        "title": "最好伪造者"
+      },
+      "item6": {
+        "title": "最好生产率"
+      }
+    },
+    "tab": {
+      "active": "当前代表",
+      "standby": "备用代表"
+    },
+    "activeTab": {
+      "item1": "最近伪造区块",
+      "item2": "丢失区块",
+      "item3": "不伪造",
+      "item4": "伪造队列"
+    }
+  },
+  "transactionDetail": {
+    "title": "交易",
+    "info": {
+      "id": "ID"
+    },
+    "summary": {
+      "title": "概况",
+      "sender": "发送者",
+      "receipt": "接收者",
+      "confirmations": "确认",
+      "amount": "数量",
+      "fee": "费用",
+      "timestamp": "时间",
+      "block": "区块"
+    }
+  },
+  "blockDetail": {
+    "title": "区块",
+    "info": {
+      "id": "区块ID"
+    },
+    "summary": {
+      "title": "概况",
+      "height": "高度",
+      "transactions": "交易",
+      "confirmations": "确认",
+      "reward": "提醒",
+      "fee": "总费用",
+      "forged": "总伪造",
+      "amount": "总数量",
+      "timestamp": "时间",
+      "generated": "生成",
+      "previous": "上一个区块",
+      "next": "下一个区块"
+    },
+    "transactions": "交易"
+  },
+  "address": {
+    "title": "地址",
+    "info": {
+      "address": "地址",
+      "key": "公钥"
+    },
+    "summary": {
+      "title": "概况",
+      "balance": "总余额",
+      "transactions": "交易",
+      "delegate": "代表"
+    },
+    "transactions": "交易",
+    "tab": {
+      "all": "所有",
+      "sent": "发送",
+      "received": "接收"
+    }
+  },
+  "network": {
+    "title": "网络管理",
+    "info": {
+      "item1": {
+        "title": "连接对等体"
+      },
+      "item2": {
+        "title": "对等体版本"
+      },
+      "item3": {
+        "title": "最新区块"
+      },
+      "item4": {
+        "title": "体积(HTC)"
+      }
+    },
+    "peers": "连接对等体"
+  }
 }
